@@ -1,0 +1,356 @@
+/*===============================
+      DEFAULT STYLING
+  ===============================*/
+
+  html,
+  body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    font-weight: 500;
+    color: #131313;
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  h6 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 14px;
+    color: #878787;
+    line-height: 2;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  input:focus,
+  select:focus,
+  button:focus,
+  textarea:focus {
+    outline: none;
+  }
+
+  a:hover,
+  a:focus {
+    text-decoration: none;
+    outline: none;
+  }
+
+  ul,
+  ol {
+    padding: 0;
+    margin: 0;
+  }
+
+
+  /*===============================
+        NAVIGATION STYLING
+    ===============================*/
+
+    .header-section {
+      padding-left: 55px;
+      padding-right: 72px;
+      background: #08192d;
+      text-transform: uppercase;
+    }
+
+    .site-logo {
+      display: inline-block;
+      padding: 30px 15px;
+      background-color: #fc0254;
+    }
+
+    .header-right {
+      float: right;
+      padding: 30px 0;
+      margin-left: 130px;
+    }
+
+    .header-right .hr-btn {
+      display: inline-block;
+      color: #979aa5;
+    }
+
+    .header-right .user-panel {
+      display: inline-block;
+    }
+
+    .header-right .user-panel a {
+      font-size: 16px;
+      color: #ffffff;
+      margin: 0 10px;
+    }
+
+    .header-right .user-panel .register {
+      color: #fc0254;
+      margin-right: 0;
+    }
+
+    .header-right span {
+      color: #fff;
+      display: inline-block;
+      padding-left: 9px;
+    }
+
+    .main-menu {
+      list-style: none;
+      float: right;
+      font-weight: bold;
+    }
+
+    .main-menu li {
+      display: inline-block;
+      position: relative;
+    }
+
+    .main-menu li a {
+      display: block;
+      font-size: 16px;
+      color: #ffffff;
+      padding: 30px 10px;
+      margin-left: 30px;
+      text-decoration: none;
+    }
+
+    .main-menu li a:hover {
+      color: #fc0254;
+    }
+
+    .main-menu li:first-child a {
+      margin-left: 0;
+    }
+
+    .main-menu li:hover .sub-menu {
+      visibility: visible;
+      opacity: 1;
+      margin-top: 0;
+    }
+
+    .main-menu .sub-menu {
+      position: absolute;
+      list-style: none;
+      width: auto;
+      left: 30px;
+      top: 100%;
+      padding: 20px 0;
+      visibility: hidden;
+      opacity: 0;
+      margin-top: 50px;
+      background: #ffffff;
+      z-index: 99;
+      -webkit-transition: all 0.4s;
+      transition: all 0.4s;
+      -webkit-box-shadow: 2px 7px 20px rgba(0, 0, 0, 0.05);
+      box-shadow: 2px 7px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .main-menu .sub-menu li {
+      display: block;
+    }
+
+    .main-menu .sub-menu li a {
+      display: block;
+      color: #000;
+      margin-left: 0;
+      padding: 5px 20px;
+      text-decoration: none;
+    }
+
+    .main-menu .sub-menu li a:hover {
+      color: #175e37;
+    }
+
+    .slicknav_menu {
+      display: none;
+    }
+
+    .spacer {
+      flex: 1 1 auto;
+    }
+
+    .nav-icon {
+      display: none;
+    }
+
+    .mat-sidenav-container {
+      height: 100%;
+    }
+
+    .mat-sidenav {
+      background-color: #294936;
+      width: 85%;
+    }
+
+    .mat-drawer-container {
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    #administration {
+      visibility: hidden;
+      display: none;
+    }
+
+    .sub-status {
+      font-size: 14px;
+      color: #ffffff;
+    }
+
+    ::ng-deep .mat-form-field-label {
+      color: #000000;
+    }
+
+
+    /*===============================
+        MOBILE DEVICE STYLING
+    ===============================*/
+    @media (max-width: 768px) {
+
+      main {
+        background-color: whitesmoke;
+        overflow-y: scroll;
+        margin-top: 10%;
+        padding: 5% 0%;
+        height: 90%;
+      }
+
+      #navigation {
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        bottom: -1px;
+        box-shadow: 20px 7px 5px rgba(0, 0, 0, 0.05);
+      }
+
+      .hide {
+        display: none;
+      }
+
+      .nav-icon {
+        display: block;
+      }
+
+      .header-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+
+      .main-menu li a {
+        padding: 20% 10px !important;
+      }
+
+      .main-menu li {
+        margin: auto;
+      }
+
+      #ZIGYN, #administration {
+        display: none;
+        visibility: hidden;
+      }
+
+      #mobileview-header {
+        position: fixed;
+        z-index: 1;
+      }
+
+      #mobileview-header a {
+        border-radius: 50px;
+        width: 40px;
+        height: 40px;
+        border: 2px solid #000000;
+      }
+      
+      .logo-background {
+        background-color: #fc0254;
+        height: 100%;
+        padding: 10px 10px;
+      }
+
+      .mat-toolbar {
+        background-color: green;
+      }
+
+      #user-profile {
+        padding: 10px;
+      }
+
+      .user-thumbnail {
+        width: 80px;
+        height: 80px;
+        border-radius: 50px;
+        border: 1px solid #000000;
+      }
+
+      .user-details {
+        display: block;
+        padding: 15px 10px;
+      }
+
+      .user-details h6 {
+        color: #ffffff;
+        padding: 2px 0px;
+      }
+
+      .detailed-info {
+        padding: 0px 10px;
+      }
+      .detailed-info li {
+        color: #ffffff;
+        font-size: 16px;
+        list-style: none;
+        padding: 2px 0px;
+      }
+
+      .detailed-info :last-child {
+        padding-bottom: 15px;
+      }
+
+      .mat-divider {
+        border-top-color: #ffffff;
+      }
+
+      .help-center, .logout {
+        padding: 15px 10px;
+      }
+
+    }
+
+    @media (min-width: 769px) {
+      #mobileview-header {
+        display: none;
+      }
+    }

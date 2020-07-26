@@ -1,0 +1,49 @@
+<section id="registration">
+  <mat-horizontal-stepper labelPosition="bottom" linear >
+    <mat-step completed="true" class="reg-first-step">
+      <div id="personal-info-form">
+        <p>
+          <mat-form-field appearance="fill">
+            <mat-label>Enter your Name(s)</mat-label>
+            <input matInput placeholder="Enter your Name">
+            <button mat-icon-button matSuffix disabled>
+              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            </button>
+            <mat-hint>Jonathan Boogeyman</mat-hint>
+          </mat-form-field>
+          <br/><br/>
+          <mat-form-field appearance="fill">
+            <mat-label>Enter your email</mat-label>
+            <input matInput placeholder="Enter your email">
+            <button mat-icon-button matSuffix disabled>
+              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            </button>
+            <mat-hint>example@gmail.com</mat-hint>
+          </mat-form-field>
+          <br/><br/>
+          <mat-form-field appearance="fill">
+            <mat-label>Enter your email</mat-label>
+            <input matInput placeholder="Enter your email">
+            <button mat-icon-button matSuffix disabled>
+              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            </button>
+            <mat-hint>example@gmail.com</mat-hint>
+          </mat-form-field>
+        </p> 
+      </div>
+      <div>
+        <button mat-raised-button matStepperNext>Next</button>
+      </div>
+    </mat-step>
+    <mat-step completed="false" optional>
+      <p>Qualifications Detail</p>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </mat-step>
+    <mat-step completed="false">
+      <p>Miscellaneous</p>
+    </mat-step>
+  </mat-horizontal-stepper>
+</section>

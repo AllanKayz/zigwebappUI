@@ -1,0 +1,79 @@
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="over" [(opened)]="opened">
+    <mat-toolbar id="account-info" class="account-info">
+      Account Info
+      <span class="spacer"></span>
+      <button mat-mini-fab aria-label="close sidenav" (click)="sidenav.close()">X</button>
+    </mat-toolbar>
+    <mat-divider></mat-divider>
+    <div id="sidenav-options">
+      <section id="login-and-registration"></section>
+      <section id="user-profile">
+        <div id="basic-info">
+          <div id="image" class="user-thumbnail"></div>
+          <div id="user-details" class="user-details">
+            <h6 id="user-name">Allan Kayz</h6>
+            <h6 id="user-occupation">GIS Developer</h6>
+          </div>
+        </div>
+        <ul class="detailed-info">
+          <li><a href="" routerLink="/ZIG" routerLinkActive="active">Profile</a></li>
+          <li><a href="" routerLink="/ZIG" routerLinkActive="active">Subscription : <span class="sub-status"> Paid</span></a></li>
+          <li><a href="" routerLink="/ZIG" routerLinkActive="active">Certificate</a></li>
+        </ul>
+        <mat-divider></mat-divider>
+        <div class="help-center">
+          <a href="" routerLink="/ZIG" routerLinkActive="active">Help Center</a>
+        </div>
+        <mat-divider></mat-divider>
+        <div class="logout">
+          <a href="" routerLink="/ZIG" routerLinkActive="active">Log Out</a>
+        </div>
+      </section>
+    </div>
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar id="mobileview-header">
+      <a routerLink="/ZIG" routerLinkActive="active" (click)="sidenav.open()"></a>
+      <span class="spacer"></span>
+      <div class="logo-background" >
+        <span >Logo</span>
+      </div>
+    </mat-toolbar>
+    <nav id="navigation" class="header-section clearfix">
+        <a href="" routerLink="/ZIG" routerLinkActive="active" class="site-logo hide">
+          <img src="img/logo.png" alt="">ZIG
+        </a>
+      <div class="header-right hide">
+        <a href="#" class="hr-btn">Contact |</a>
+        <div class="user-panel hide">
+          <a href="" routerLink="/login" routerLinkActive="active" class="login">Login</a>
+          <a href="" routerLink="/register" routerLinkActive="active" class="register">Create an account</a>
+        </div>
+      </div>
+      <ul class="main-menu">
+        <li><a href="#" routerLink="/ZIG" routerLinkActive="active"><span class="hide">Home</span><span id="home-icon"
+              class="nav-icon">H</span></a></li>
+        <li><a href="#" routerLink="/ZIG" routerLinkActive="active"><span class="hide">About Us</span><span
+              id="about-icon" class="nav-icon">A</span></a></li>
+        <li><a><span class="hide">Services</span><span id="services-icon" class="nav-icon">S</span></a>
+          <ul class="sub-menu hide">
+            <li><a href="" routerLink="/ZIG" routerLinkActive="active">GeoChat</a></li>
+            <li><a href="" routerLink="/ZIG" routerLinkActive="active">Tools</a></li>
+            <li><a href="" routerLink="/ZIG" routerLinkActive="active">GeoHub</a></li>
+            <li><a href="" routerLink="/ZIG" routerLinkActive="active">Store</a></li>
+            <li><a href="" routerLink="/ZIG" routerLinkActive="active">Members</a></li>
+          </ul>
+        </li>
+        <li><a routerLink="/ZIGYN" routerLinkActive="active"><span class="hide">Blog</span><span id="blog-icon"
+          class="nav-icon">B</span></a></li>
+        <li id="ZIGYN" class="hide"><a routerLink="/ZIGYN" routerLinkActive="active"><span>ZIGYN</span></a></li>
+        <li id="administration" class="hide"><a routerLink="/ZIGYN" routerLinkActive="active"><span>Adminitration</span></a></li>
+      </ul>
+    </nav>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>
