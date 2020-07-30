@@ -265,12 +265,12 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 40px;
+        padding-right: 40px;
       }
 
       .main-menu li a {
-        padding: 20% 10px !important;
+        padding: 20% 0px !important;
       }
 
       .main-menu li {
@@ -293,7 +293,7 @@
         height: 40px;
         border: 2px solid #000000;
       }
-      
+
       .logo-background {
         background-color: #fc0254;
         height: 100%;

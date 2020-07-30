@@ -24,6 +24,56 @@
   color: #fff;
 }
 
+::ng-deep .mat-form-field-label {
+  color: #000000;
+}
+
+::ng-deep .mat-radio-outer-circle {
+  border-color: #008000;
+}
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-underline::before {
+  background-color: #008000;
+}
+
+::ng-deep .mat-datepicker-toggle, .mat-datepicker-content .mat-calendar-next-button, .mat-datepicker-content .mat-calendar-previous-button {
+   color: #008000;
+}
+
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+  border-color: #7b1fa2;
+}
+
 .reg-first-step {
   overflow-y: scroll;
+  justify-content: center;
+}
+
+.gender {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+.gender-items-padding {
+  padding: 0px 10px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.registration-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#btn-forward {
+  float: right;
+}
+
+#btn-previous {
+  transform: rotate(180deg);
+  transform-origin: 50% 50%;
 }
