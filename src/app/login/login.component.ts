@@ -8,12 +8,8 @@ import {FormControl, Validators} from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
 
+  hide = true;
   constructor() { }
 
-  ngOnInit(): void {   
-
-  }
-
-  hide = true;
-
+  ngOnInit(): void {  }
 }

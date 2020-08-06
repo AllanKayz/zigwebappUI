@@ -8,19 +8,20 @@
       </button>
       <mat-hint>example@gmail.com</mat-hint>
     </mat-form-field>
-    <br/><br/><br/><br/>
+    <br /><br /><br /><br />
     <mat-form-field appearance="fill">
       <mat-label>Enter your password</mat-label>
       <input matInput [type]="hide ? 'password' : 'text'">
-      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+        [attr.aria-pressed]="hide">
+        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
       </button>
     </mat-form-field>
-    <br/><br/>  
+    <br /><br />
     <div class="button-flex-container">
       <button mat-raised-button color="accent">Login</button>
     </div>
-    <br/><br/><br/>
+    <br /><br /><br />
     <span><a href="">Forgot Password</a></span><span> | <a href="">Register With Us</a></span>
   </form>
 </section>

@@ -18,7 +18,8 @@
         </div>
         <ul class="detailed-info">
           <li><a href="" routerLink="/ZIG" routerLinkActive="active">Profile</a></li>
-          <li><a href="" routerLink="/ZIG" routerLinkActive="active">Subscription : <span class="sub-status"> Paid</span></a></li>
+          <li><a href="" routerLink="/ZIG" routerLinkActive="active">Subscription : <span class="sub-status">
+                Paid</span></a></li>
           <li><a href="" routerLink="/ZIG" routerLinkActive="active">Certificate</a></li>
         </ul>
         <mat-divider></mat-divider>
@@ -37,14 +38,14 @@
     <mat-toolbar id="mobileview-header">
       <a routerLink="/ZIG" routerLinkActive="active" (click)="sidenav.open()"></a>
       <span class="spacer"></span>
-      <div class="logo-background" >
-        <span >Logo</span>
+      <div class="logo-background">
+        <span>Logo</span>
       </div>
     </mat-toolbar>
     <nav id="navigation" class="header-section clearfix">
-        <a href="" routerLink="/ZIG" routerLinkActive="active" class="site-logo hide">
-          <img src="img/logo.png" alt="">ZIG
-        </a>
+      <a href="" routerLink="/ZIG" routerLinkActive="active" class="site-logo hide">
+        <img src="img/logo.png" alt="">ZIG
+      </a>
       <div class="header-right hide">
         <a href="#" class="hr-btn">Contact |</a>
         <div class="user-panel hide">
@@ -54,10 +55,16 @@
       </div>
       <ul class="main-menu">
         <li><a href="#" routerLink="/ZIG" routerLinkActive="active"><span class="hide">Home</span><span id="home-icon"
-              class="nav-icon">H</span></a></li>
+              class="nav-icon">
+              <mat-icon aria-hidden="false" aria-label="H">home</mat-icon>
+            </span></a></li>
         <li><a href="#" routerLink="/ZIG" routerLinkActive="active"><span class="hide">About Us</span><span
-              id="about-icon" class="nav-icon">A</span></a></li>
-        <li><a><span class="hide">Services</span><span id="services-icon" class="nav-icon">S</span></a>
+              id="about-icon" class="nav-icon">
+              <mat-icon aria-hidden="false" aria-label="I">info</mat-icon>
+            </span></a></li>
+        <li><a><span class="hide">Services</span><span id="services-icon" class="nav-icon">
+              <mat-icon aria-hidden="false" aria-label="S">construction</mat-icon>
+            </span></a>
           <ul class="sub-menu hide">
             <li><a href="" routerLink="/ZIG" routerLinkActive="active">GeoChat</a></li>
             <li><a href="" routerLink="/ZIG" routerLinkActive="active">Tools</a></li>
@@ -67,9 +74,12 @@
           </ul>
         </li>
         <li><a routerLink="/ZIGYN" routerLinkActive="active"><span class="hide">Blog</span><span id="blog-icon"
-          class="nav-icon">B</span></a></li>
+              class="nav-icon">
+              <mat-icon aria-hidden="false" aria-label="B">local_library</mat-icon>
+            </span></a></li>
         <li id="ZIGYN" class="hide"><a routerLink="/ZIGYN" routerLinkActive="active"><span>ZIGYN</span></a></li>
-        <li id="administration" class="hide"><a routerLink="/ZIGYN" routerLinkActive="active"><span>Adminitration</span></a></li>
+        <li id="administration" class="hide"><a routerLink="/ZIGYN"
+            routerLinkActive="active"><span>Adminitration</span></a></li>
       </ul>
     </nav>
     <main>
