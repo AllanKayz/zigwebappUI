@@ -5,7 +5,7 @@
         <form>
           <mat-form-field class="full-width" appearance="fill">
             <mat-label>Enter your Name(s)</mat-label>
-            <input matInput placeholder="Enter your Name">
+            <input type="text" matInput placeholder="Enter your Name">
             <button mat-icon-button matSuffix disabled>
               <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
             </button>
@@ -14,7 +14,7 @@
           <br /><br />
           <mat-form-field class="full-width" appearance="fill">
             <mat-label>Enter your Surname</mat-label>
-            <input matInput placeholder="Enter your email">
+            <input type="text" matInput placeholder="Enter your Surname">
             <button mat-icon-button matSuffix disabled>
               <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
             </button>
@@ -29,6 +29,30 @@
             <mat-hint>17/07/2020</mat-hint>
           </mat-form-field>
           <br /><br />
+          <mat-form-field class="full-width" appearance="fill">
+            <mat-label>National ID Number</mat-label>
+            <input matInput placeholder="Enter your ID Number">
+            <button mat-icon-button matSuffix disabled>
+              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            </button>
+            <mat-hint>30-00000X30</mat-hint>
+          </mat-form-field>
+          <br /><br />
+          <mat-form-field class="full-width tel-number" appearance="fill">
+            <mat-label>Contact Number</mat-label>
+            <span matPrefix>+1 &nbsp; &nbsp;
+              <!--mat-form-field>
+                <mat-select [(value)]="selectedValue">
+                  <mat-option value="zimbabwe">+263</mat-option>
+                  <mat-option value="usa">+1</mat-option>
+                  <mat-option value="southafrica">+267</mat-option>
+                </mat-select>
+              </mat-form-field-->
+            </span>
+            <input type="tel" matInput placeholder="555 555 1234">
+            <mat-hint>77 483 3890</mat-hint>
+          </mat-form-field>
+          <br /><br />
           <div class="gender">
             <label class="gender-items-padding"><strong>Gender: </strong></label>
             <mat-radio-group class="full-width">
@@ -36,6 +60,7 @@
               <mat-radio-button value="female" class="gender-items-padding">Female</mat-radio-button>
             </mat-radio-group>
           </div>
+          <br />
         </form>
       </div>
       <div class="registration-btns">
@@ -45,8 +70,46 @@
       </div>
     </mat-step>
     <mat-step completed="false" optional>
-      <p>Qualifications Detail</p>
-      <div>
+      <div id="qualification-info">
+        <form id="qualifications">
+          <mat-form-field class="full-width" appearance="fill">
+            <mat-label>Enter your Qualification</mat-label>
+            <input matInput placeholder="Enter your Qualification">
+            <button mat-icon-button matSuffix disabled>
+              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            </button>
+            <mat-hint>preferably geomatics related, additional qualifications can be added once signed up</mat-hint>
+          </mat-form-field>
+          <br /><br />
+          <mat-form-field class="full-width" appearance="fill">
+            <mat-label>Instute Qualification Attained From</mat-label>
+            <input matInput placeholder="Instute Qualification Attained From">
+            <button mat-icon-button matSuffix disabled>
+              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            </button>
+            <mat-hint>E.g: University of Zimbabwe</mat-hint>
+          </mat-form-field>
+          <br /><br />
+          <mat-form-field class="full-width" appearance="fill">
+            <mat-label>Year of Completion</mat-label>
+            <input matInput [matDatepicker]="pickerYear">
+            <mat-datepicker-toggle matSuffix [for]="pickerYear"></mat-datepicker-toggle>
+            <mat-datepicker #pickerYear startView="multi-year"></mat-datepicker>
+            <mat-hint>E.g: 2020</mat-hint>
+          </mat-form-field>
+          <br /><br />
+          <mat-form-field class="full-width" appearance="fill">
+            <mat-label>Current Profesion</mat-label>
+            <input matInput placeholder="Current Profession">
+            <button mat-icon-button matSuffix disabled>
+              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            </button>
+            <mat-hint>Engineering Surveyor</mat-hint>
+          </mat-form-field>
+          <br /><br />
+        </form>
+      </div>
+      <div class="registration-btns">
         <button id="btn-previous" mat-flat-button color="accent" matStepperPrevious>
           <mat-icon aria-hidden="false" aria-label="previous">forward</mat-icon>
         </button>
@@ -56,7 +119,40 @@
       </div>
     </mat-step>
     <mat-step completed="false">
-      <p>Miscellaneous</p>
+      <div id="complete-sign-up">
+        <form id="finish-sign-up">
+          <mat-form-field class="full-width" appearance="fill">
+            <mat-label>Enter your Email</mat-label>
+            <input type="email" matInput placeholder="Enter your Email">
+            <button mat-icon-button matSuffix disabled>
+              <mat-icon matPrefix>sentiment_very_satisfied</mat-icon>
+            </button>
+            <mat-hint>E.g: zigmember@mail.com</mat-hint>
+          </mat-form-field>
+          <br /><br />
+          <mat-form-field class="full-width" appearance="fill">
+            <mat-label>Enter Password</mat-label>
+            <input type="password" matInput placeholder="Password" minlength="8">
+            <button mat-icon-button matSuffix disabled>
+              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            </button>
+            <mat-hint>Password length should have at least 8 characters</mat-hint>
+          </mat-form-field>
+          <br /><br />
+          <mat-form-field class="full-width" appearance="fill">
+            <mat-label>Confirm Password</mat-label>
+            <input type="password" matInput placeholder="Confirm Password">
+            <button mat-icon-button matSuffix disabled>
+              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            </button>
+            <mat-hint>password confirmation</mat-hint>
+          </mat-form-field>
+          <br /><br />
+        </form>
+      </div>
+      <div class="registration-btns">
+        <button id="btn-sign-up" mat-raised-button color="accent" (click)="openDialog()">Register</button>
+      </div>
     </mat-step>
   </mat-horizontal-stepper>
 </section>

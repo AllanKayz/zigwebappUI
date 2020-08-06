@@ -11,6 +11,7 @@ import { ZigComponent } from './zig/zig.component';
 import { ZigynComponent } from './zigyn/zigyn.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { FinishSignUpDialogComponent } from './finish-sign-up-dialog/finish-sign-up-dialog.component';
 
 
 
@@ -20,7 +21,8 @@ import { RegisterComponent } from './register/register.component';
     ZigComponent,
     ZigynComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    FinishSignUpDialogComponent
   ],
   imports: [
     BrowserModule,

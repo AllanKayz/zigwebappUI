@@ -45,6 +45,15 @@
   color: #008000;
 }
 
+.tel-number ::ng-deep .mat-form-field-label-wrapper {
+  top: -0.44375em;
+  padding-top: .84375em;
+}
+
+::ng-deep .mat-select-value {
+  color: #000000;
+}
+
 .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
   border-color: #7b1fa2;
 }
