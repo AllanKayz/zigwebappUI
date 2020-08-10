@@ -8,6 +8,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./zig.component.css']
 })
 export class ZigComponent implements OnInit {
+
+  step = 0;
+
   constructor ( private titleService: Title, private router: Router ) { }
 
   public setTitle ( newTitle: string ) {
@@ -17,5 +20,18 @@ export class ZigComponent implements OnInit {
   ngOnInit() {
     let pageURL = this.router.url;
   }
+
+  setStep(index: number) {
+    this.step = index;
+  }
+
+  nextStep() {
+    this.step++;
+  }
+
+  prevStep() {
+    this.step--;
+  }
+
 
 }

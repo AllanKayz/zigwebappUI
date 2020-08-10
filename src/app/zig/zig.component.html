@@ -1,10 +1,167 @@
-<h1>Welcome To ZIG</h1>
-<div id="startpage" class="center">
-  hhh
-  <button id="zig" routerLink="/ZIG" routerLinkActive="active" class="optionbtn" mat-raised-button color="accent">
-    ZIG Official
-  </button>
-  <button id="zigyn" routerLink="/ZIGYN" routerLinkActive="active" class="optionbtn" mat-raised-button color="warn">
-    ZIGYN
-  </button>
-</div>
+<main id="homepage" class="homepage container-fluid">
+  <section id="banner" class="banner"></section>
+  <section class="who-we-are homesections">
+    <div class="zig-mini-bio">
+      <div class="col-12 text-center">
+        <h4 class="display-4 h4 text-capitalize">Who We Are</h4>
+      </div>
+      <div class="paragraph">
+        <p class="text-justify font-weight-light">
+          Zimbabwe Institute of Geomatics (ZIG) is a professional body that seeks to lobby and address all the gaps
+          currently being experienced in the Geomatics industry in Zimbabwe. It serves the interest of the young and
+          old,
+          the experienced and the unexperienced, the vulnerable and the powerful. ZIG does this through addressing the
+          need for change in the roles involved in shaping this profession using the energy expected from the young
+          Geomaticians coupled with the knowledge and experience from our respected seniors of this wonderful profession
+
+          ZIG was formed in response to the need for change in ways of handling Geomatics matters, the use of the
+          “Surveying” term in this modern world is slowly being phased out as the new order gives birth to the use of a
+          term “Geomatics” which clearly encompasses all the disciplines.</p>
+      </div>
+    </div>
+    <div class="zig-sub-branches"></div>
+  </section>
+  <section class="what-is-geomatics homesections">
+    <div class="col-12 text-center">
+      <h4 class="display-4 h4 text-capitalize">What is Geomatics?</h4>
+    </div>
+    <div class="paragraph">
+      <p class="text-justify font-weight-light">Geomatics is both a professional discipline and an applied science. It
+        is made up of several
+        fields that include
+        Geographical Information Science, Engineering Survey, Land/Cadastral Survey, Mining Survey, Remote Sensing &
+        Photogrammetry</p>
+    </div>
+  </section>
+  <section class="industries homesections">
+    <div class="col-12 text-center">
+      <h4 class="display-4 h4 text-capitalize">Industries We Serve</h4>
+    </div>
+    
+    <mat-accordion class="example-headers-align">
+      <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Photogrammetry & Remote Sensing
+          </mat-panel-title>
+          <mat-panel-description class="float-right">
+            <mat-icon>map</mat-icon>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p class="text-monospace text-left small">Photogrammetry is the art and science of measurements taken using digital
+          or anologue photographs as the prime non contact medium.<br/><br/>
+          Remote sensing is the science of passively measuring object's temporal and spatial characteristics using the
+          electromagnetic spectrum.</p>
+        <mat-action-row>
+          <button mat-raised-button color="primary" (click)="nextStep()">Next</button>
+        </mat-action-row>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            GIS & Cartography
+          </mat-panel-title>
+          <mat-panel-description class="float-right">
+            <mat-icon>map</mat-icon>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <p class="small text-left text-monospace">Geographic Information System (GIS) is a computer system build to
+          capture, store, manipulate, analyze, manage and display all kinds of spatial or geographical data.
+          <br/><br/>
+          Cartography is the study and practice of creating maps to communicate spatial, topographic, and geographic
+          information effectively.</p>
+
+        <mat-action-row>
+          <button mat-raised-button color="warn" (click)="prevStep()">Previous</button>
+          <button mat-raised-button color="primary" (click)="nextStep()">Next</button>
+        </mat-action-row>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Mining Survey
+          </mat-panel-title>
+          <mat-panel-description class="float-right">
+            <mat-icon>map</mat-icon>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <p class="small text-left text-monospace">Mine survey is the practice art or science of determining relative
+          positions of points on or under the surface of the earth on a mine boundaries.</p>
+
+        <mat-action-row>
+          <button mat-raised-button color="warn" (click)="prevStep()">Previous</button>
+          <button mat-raised-button color="primary" (click)="nextStep()">Next</button>
+        </mat-action-row>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel [expanded]="step === 3" (opened)="setStep(3)">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Engineering Survey
+          </mat-panel-title>
+          <mat-panel-description class="float-right">
+            <mat-icon>map</mat-icon>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+
+         <p class="text-left small text-monospace">Engineering survey is a Geomatics profession that examines objects and
+           records/places the location of features so as to construct a map, plan, or description for the development, design, construction, operation and
+           maintenance of civil and other engineered projects.</p>
+
+        <mat-action-row>
+          <button mat-raised-button color="warn" (click)="prevStep()">Previous</button>
+          <button mat-raised-button color="primary" (click)="nextStep()">Next</button>
+        </mat-action-row>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel [expanded]="step === 4" (opened)="setStep(4)">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Cadastral Survey
+          </mat-panel-title>
+          <mat-panel-description>
+            <mat-icon>map</mat-icon>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <p class="small text-left text-monospace">Cadastral surveying is a branch of the surveying profession that is
+          concerned with land
+          management, and more
+          specifically with issues of land ownership, measurement and delineation of property boundaries. Note:- Only
+          licensed surveyors can undertake a boundary survey or place a survey mark that defines a property boundary.
+        </p>
+
+        <mat-action-row>
+          <button mat-button color="warn" (click)="prevStep()">Previous</button>
+          <button mat-button color="primary" (click)="nextStep()">End</button>
+        </mat-action-row>
+      </mat-expansion-panel>
+
+    </mat-accordion>
+
+  </section>
+  <section class="subscriptions"></section>
+  <section class="connect text-center">
+    <div class="row">
+      <div class="col-sm">
+        <a href="">
+          <mat-icon aria-hidden="false" aria-label="facebook">facebook</mat-icon>
+        </a>
+      </div>
+      <div class="col-sm">
+        <a href="">
+          <mat-icon aria-hidden="false" aria-label="twitter">twitter</mat-icon>
+        </a>
+      </div>
+      <div class="col-sm">
+        <a href="">
+          <mat-icon aria-hidden="false" aria-label="youtube">youtube</mat-icon>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>

@@ -1,1 +1,20 @@
+@import url("../base/base.css");
 
+.homesections {
+    width: 85%;
+    margin: auto;
+}
+
+.who-we-are hr {
+  border: 1px solid #0000ff;
+  width: 50%;
+  margin-top: .1rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .homesections {
+        padding: 20px 3px;
+        width: 100%;
+    }
+}
