@@ -12,9 +12,26 @@
   margin-bottom: 2rem;
 }
 
+.social a {
+  font-size: 4.5em;
+  padding: 3rem;
+}
+
 @media (max-width: 768px) {
     .homesections {
         padding: 20px 3px;
         width: 100%;
+    }
+
+    .social a {
+      font-size: 2.5em;
+      padding: 1.2rem;
+    }
+}
+
+@media(max-width: 576px){
+    .social a {
+      font-size: 2em;
+      padding: .7rem;
     }
 }

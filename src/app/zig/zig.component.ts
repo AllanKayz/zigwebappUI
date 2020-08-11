@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Title } from '@angular/platform-browser';
-import { Router } from '@angular/router';
+import { faFacebook, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-zig',
@@ -9,27 +8,24 @@ import { Router } from '@angular/router';
 })
 export class ZigComponent implements OnInit {
 
+  faFacebook = faFacebook;
+  faYoutube = faYoutube;
+  faTwitter = faTwitter;
   step = 0;
 
-  constructor ( private titleService: Title, private router: Router ) { }
+  constructor( ) { }
 
-  public setTitle ( newTitle: string ) {
-    this.titleService,this.setTitle( newTitle );
-  }
+  ngOnInit(): any { }
 
-  ngOnInit() {
-    let pageURL = this.router.url;
-  }
-
-  setStep(index: number) {
+  setStep(index: number): void {
     this.step = index;
   }
 
-  nextStep() {
+  nextStep(): any {
     this.step++;
   }
 
-  prevStep() {
+  prevStep(): any {
     this.step--;
   }
 

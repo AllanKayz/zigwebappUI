@@ -12,6 +12,7 @@ import { ZigynComponent } from './zigyn/zigyn.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { FinishSignUpDialogComponent } from './finish-sign-up-dialog/finish-sign-up-dialog.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 
@@ -30,7 +31,8 @@ import { FinishSignUpDialogComponent } from './finish-sign-up-dialog/finish-sign
     BrowserAnimationsModule,
     MaterialModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    FontAwesomeModule
   ],
   providers: [
     Title

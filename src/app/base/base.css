@@ -34,6 +34,19 @@
     line-height: 1.2;
 }
 
+.youtube-icon {
+  color: #bb0000;
+}
+
+.facebook-icon {
+  color: #3b5998;
+}
+
+.twitter-icon {
+  color: #00aced;
+}
+
+
 @media (max-width: 768px) {
   .display-1 {
     font-size: 4rem;
