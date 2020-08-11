@@ -1,6 +1,6 @@
 <main id="homepage" class="homepage container-fluid">
   <section id="banner" class="banner"></section>
-  <section class="who-we-are homesections">
+  <section class="who-we-are homesections pt-5">
     <div class="zig-mini-bio">
       <div class="col-12 text-center">
         <h4 class="display-4 h4 text-capitalize">Who We Are</h4>
@@ -19,25 +19,54 @@
           term “Geomatics” which clearly encompasses all the disciplines.</p>
       </div>
     </div>
-    <div class="zig-sub-branches"></div>
-  </section>
-  <section class="what-is-geomatics homesections">
-    <div class="col-12 text-center">
-      <h4 class="display-4 h4 text-capitalize">What is Geomatics?</h4>
+    <div class="zig-sub-branches">
+      <div class="row text-center padding">
+        <div class="col-xs-12 col-sm-6 col-md-4 pb-5">
+          <a href="#">
+            <fa-icon [icon]="faTwitter" class="fa-code"></fa-icon>
+            <h3>ZIG Youth Network</h3>
+            <p class="text-monospace">The Youth Community of ZIG.</p>
+          </a> 
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 pb-5">
+          <a href="#">
+            <fa-icon [icon]="faFacebook" class="fa-code"></fa-icon>
+            <h3>GeoChat</h3>
+            <p class="text-monospace">A Geomatics Talk Show.</p>
+          </a>
+        </div>
+        <div class="col-sm-12 col-md-4 pb-5">
+          <a href="#">
+            <fa-icon [icon]="faYoutube" class="fa-code"></fa-icon>
+            <h3>GeoHub</h3>
+            <p class="text-monospace">Platform for sharing geo-related data, tutorials, accademic research papers, thesis,
+              projects.</p>
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="paragraph">
-      <p class="text-justify font-weight-light">Geomatics is both a professional discipline and an applied science. It
-        is made up of several
-        fields that include
-        Geographical Information Science, Engineering Survey, Land/Cadastral Survey, Mining Survey, Remote Sensing &
-        Photogrammetry</p>
+  </section>
+  <section class="what-is-geomatics pb-5 padding-b pt-5">
+    <div id="des-text" class="description-text">
+      <div class="col-12 text-center">
+        <h4 class="display-4 h4 text-capitalize font-weight-bold">What is Geomatics?</h4>
+      </div>
+      <div class="paragraph">
+        <p class="text-justify">Geomatics is both a professional discipline and an applied science. It
+          is made up of several
+          fields that include
+          Geographical Information Science, Engineering Survey, Land/Cadastral Survey, Mining Survey, Remote Sensing &
+          Photogrammetry</p>
+      </div>
+      <div class="col-12 video-area text-center">
+        <a class="expand-video" href="https://www.youtube.com/watch?v=8qs2dZO6wcc"><fa-icon [icon]="faPlay" size="1x"></fa-icon></a>
+      </div>
     </div>
   </section>
-  <section class="industries homesections">
+  <section class="industries homesections pb-5 pt-5">
     <div class="col-12 text-center">
       <h4 class="display-4 h4 text-capitalize">Industries We Serve</h4>
     </div>
-    
     <mat-accordion class="example-headers-align">
       <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" >
         <mat-expansion-panel-header>
@@ -48,7 +77,7 @@
             <mat-icon>map</mat-icon>
           </mat-panel-description>
         </mat-expansion-panel-header>
-        <p class="text-monospace text-left small">Photogrammetry is the art and science of measurements taken using digital
+        <p class="text-monospace text-left industry-text">Photogrammetry is the art and science of measurements taken using digital
           or anologue photographs as the prime non contact medium.<br/><br/>
           Remote sensing is the science of passively measuring object's temporal and spatial characteristics using the
           electromagnetic spectrum.</p>
@@ -56,7 +85,6 @@
           <button mat-raised-button color="primary" (click)="nextStep()">Next</button>
         </mat-action-row>
       </mat-expansion-panel>
-
       <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)">
         <mat-expansion-panel-header>
           <mat-panel-title>
@@ -66,19 +94,16 @@
             <mat-icon>map</mat-icon>
           </mat-panel-description>
         </mat-expansion-panel-header>
-
-        <p class="small text-left text-monospace">Geographic Information System (GIS) is a computer system build to
+        <p class="industries-text text-left text-monospace">Geographic Information System (GIS) is a computer system build to
           capture, store, manipulate, analyze, manage and display all kinds of spatial or geographical data.
           <br/><br/>
           Cartography is the study and practice of creating maps to communicate spatial, topographic, and geographic
           information effectively.</p>
-
         <mat-action-row>
           <button mat-raised-button color="warn" (click)="prevStep()">Previous</button>
           <button mat-raised-button color="primary" (click)="nextStep()">Next</button>
         </mat-action-row>
       </mat-expansion-panel>
-
       <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)">
         <mat-expansion-panel-header>
           <mat-panel-title>
@@ -88,16 +113,13 @@
             <mat-icon>map</mat-icon>
           </mat-panel-description>
         </mat-expansion-panel-header>
-
-        <p class="small text-left text-monospace">Mine survey is the practice art or science of determining relative
+        <p class="industries-text text-left text-monospace">Mine survey is the practice art or science of determining relative
           positions of points on or under the surface of the earth on a mine boundaries.</p>
-
         <mat-action-row>
           <button mat-raised-button color="warn" (click)="prevStep()">Previous</button>
           <button mat-raised-button color="primary" (click)="nextStep()">Next</button>
         </mat-action-row>
       </mat-expansion-panel>
-
       <mat-expansion-panel [expanded]="step === 3" (opened)="setStep(3)">
         <mat-expansion-panel-header>
           <mat-panel-title>
@@ -107,17 +129,15 @@
             <mat-icon>map</mat-icon>
           </mat-panel-description>
         </mat-expansion-panel-header>
-
-         <p class="text-left small text-monospace">Engineering survey is a Geomatics profession that examines objects and
+         <p class="text-left industries-text text-monospace">Engineering survey is a Geomatics profession that examines
+           objects and
            records/places the location of features so as to construct a map, plan, or description for the development, design, construction, operation and
            maintenance of civil and other engineered projects.</p>
-
         <mat-action-row>
           <button mat-raised-button color="warn" (click)="prevStep()">Previous</button>
           <button mat-raised-button color="primary" (click)="nextStep()">Next</button>
         </mat-action-row>
       </mat-expansion-panel>
-
       <mat-expansion-panel [expanded]="step === 4" (opened)="setStep(4)">
         <mat-expansion-panel-header>
           <mat-panel-title>
@@ -127,22 +147,18 @@
             <mat-icon>map</mat-icon>
           </mat-panel-description>
         </mat-expansion-panel-header>
-
-        <p class="small text-left text-monospace">Cadastral surveying is a branch of the surveying profession that is
+        <p class="industries-text text-left text-monospace">Cadastral surveying is a branch of the surveying profession that is
           concerned with land
           management, and more
           specifically with issues of land ownership, measurement and delineation of property boundaries. Note:- Only
           licensed surveyors can undertake a boundary survey or place a survey mark that defines a property boundary.
         </p>
-
         <mat-action-row>
-          <button mat-button color="warn" (click)="prevStep()">Previous</button>
-          <button mat-button color="primary" (click)="nextStep()">End</button>
+          <button mat-raised-button color="warn" (click)="prevStep()">Previous</button>
+          <button mat-raised-button color="primary" (click)="nextStep()">End</button>
         </mat-action-row>
       </mat-expansion-panel>
-
     </mat-accordion>
-
   </section>
   <section class="subscriptions"></section>
   <section class="connect text-center">

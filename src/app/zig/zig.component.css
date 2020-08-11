@@ -1,8 +1,8 @@
 @import url("../base/base.css");
 
 .homesections {
-    width: 85%;
-    margin: auto;
+  width: 85%;
+  margin: auto;
 }
 
 .who-we-are hr {
@@ -17,21 +17,172 @@
   padding: 3rem;
 }
 
-@media (max-width: 768px) {
-    .homesections {
-        padding: 20px 3px;
-        width: 100%;
-    }
-
-    .social a {
-      font-size: 2.5em;
-      padding: 1.2rem;
-    }
+.fa-code {
+  font-size: 4em;
+  margin: 1rem;
 }
 
-@media(max-width: 576px){
-    .social a {
-      font-size: 2em;
-      padding: .7rem;
-    }
+.zig-sub-branches a:hover {
+  text-decoration: none;
+  color: green;
+  font-size: 16px;
+  transition: all 0.4s;
+}
+
+.what-is-geomatics {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/skyscrapers.jpg);
+  background-attachment: fixed;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  position: relative;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.what-is-geomatics>.description-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 20px 10px;
+  background: inherit;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.what-is-geomatics>.description-text::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  height: 100%;
+  background: inherit;
+  background-attachment: fixed;
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+}
+
+.what-is-geomatics>.description-text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(7, 85, 4, 0.603)
+}
+
+.what-is-geomatics>.description-text h4,
+.what-is-geomatics>.description-text p {
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+/*--- Play Video ---*/
+
+.video-area a {
+  font-size: 22px;
+  color: #008000;
+  height: 50px;
+  width: 50px;
+  position: relative;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 53px;
+  padding-left: 6px;
+  background-color: #fff;
+  display: inline-block;
+  margin-top: 20px;
+  z-index: 1;
+}
+
+.video-area a:before,
+.video-area a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.video-area a:before {
+  -webkit-animation: scaling 1s linear 0s infinite;
+  -o-animation: scaling 1s linear 0s infinite;
+  animation: scaling 1s linear 0s infinite;
+}
+
+.video-area a:after {
+  -webkit-animation: scaling 1s linear 0.3s infinite;
+  -o-animation: scaling 1s linear 0.3s infinite;
+  animation: scaling 1s linear 0.3s infinite;
+}
+
+
+@keyframes scaling {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+
+  15% {
+    opacity: 0.7;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+    transform: scale(2);
+  }
+}
+
+
+@media(min-width: 768px) {
+  .description-text p {
+    margin: auto;
+    width: 85%;
+  }
+
+  .video-area a {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .homesections {
+    padding: 20px 3px;
+    width: 100%;
+  }
+
+  .social a {
+    font-size: 2.5em;
+    padding: 1.2rem;
+  }
+}
+
+@media(max-width: 576px) {
+  .social a {
+    font-size: 2em;
+    padding: .7rem;
+  }
+
+  .industries-text {
+    font-size: 80%;
+    font-weight: 400;
+  }
 }

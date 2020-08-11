@@ -46,6 +46,9 @@
   color: #00aced;
 }
 
+.padding-b {
+  padding-bottom: 2rem;
+}
 
 @media (max-width: 768px) {
   .display-1 {
