@@ -1,3 +1,78 @@
+/*===============================
+      DEFAULT STYLING
+  ===============================*/
+
+html,
+body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 500;
+  color: #131313;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 14px;
+  color: #878787;
+  line-height: 2;
+}
+
+img {
+  max-width: 100%;
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+  outline: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
 .display-1 {
   font-size: 6rem;
   font-weight: 300;
@@ -50,6 +125,19 @@
   padding-bottom: 2rem;
 }
 
+@media (min-width: 769px) {
+  .mobile-view-only {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+/* Styling For Common Angular Material Classes */
+::ng-deep .mat-tab-label,
+.mat-tab-link {
+  color: #000000;
+}
+
 @media (max-width: 768px) {
   .display-1 {
     font-size: 4rem;
@@ -73,5 +161,10 @@
     font-size: 1.5rem;
     font-weight: 300;
     line-height: 1.2;
+  }
+
+  .desktop-view-only {
+    display: none;
+    visibility: hidden;
   }
 }

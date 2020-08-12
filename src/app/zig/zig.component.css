@@ -1,5 +1,28 @@
 @import url("../base/base.css");
 
+.home-banner-area {
+  margin-left: -15px;
+  margin-right: -15px;
+  z-index: 1;
+  background: url('../../assets/images/banner-background.png') no-repeat center center;
+  background-size: cover;
+}
+
+.home-banner-area .banner-inner {
+  width: 100%;
+}
+
+.home-banner-area .banner-inner .home-left-img {
+  padding-top: 230px;
+  padding-bottom: 230px;
+}
+
+.home-banner-area .banner-inner .banner-content {
+  text-align: left;
+  color: #ffffff;
+  margin-left: 70px;
+}
+
 .homesections {
   width: 85%;
   margin: auto;
@@ -65,7 +88,8 @@
   filter: blur(4px);
 }
 
-.what-is-geomatics>.description-text::after {
+.what-is-geomatics>.description-text::after,
+.what-is-geomatics>.subscription-text::after {
   content: "";
   position: absolute;
   top: 0;
@@ -76,7 +100,10 @@
 }
 
 .what-is-geomatics>.description-text h4,
-.what-is-geomatics>.description-text p {
+.what-is-geomatics>.description-text p,
+.what-is-geomatics>.subscription-text h2,
+.what-is-geomatics>.subscription-text h5,
+.what-is-geomatics>.subscription-text .subscribe-form {
   color: white;
   position: relative;
   z-index: 1;
@@ -96,7 +123,7 @@
   padding-left: 6px;
   background-color: #fff;
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 0px;
   z-index: 1;
 }
 
@@ -122,6 +149,12 @@
   -webkit-animation: scaling 1s linear 0.3s infinite;
   -o-animation: scaling 1s linear 0.3s infinite;
   animation: scaling 1s linear 0.3s infinite;
+}
+
+
+/* Industries Section Styling */
+::ng-deep .mat-tab-header-pagination-chevron {
+  border-color: #008000;
 }
 
 
@@ -184,5 +217,9 @@
   .industries-text {
     font-size: 80%;
     font-weight: 400;
+  }
+
+  .home-banner-area .banner-inner .banner-content {
+    margin-left: 10px;
   }
 }

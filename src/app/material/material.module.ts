@@ -34,6 +34,7 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatNativeDateModule } from '@angular/material/core';
+import { MatTabsModule } from '@angular/material/tabs';
 
 
 const MaterialComponents = [
@@ -73,7 +74,8 @@ const MaterialComponents = [
   MatProgressSpinnerModule,
   MatProgressBarModule,
   MatButtonToggleModule,
-  MatNativeDateModule
+  MatNativeDateModule,
+  MatTabsModule
 ]
 
 
