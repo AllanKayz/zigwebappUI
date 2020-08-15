@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { MaterialModule } from './material/material.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AgmCoreModule } from '@agm/core'; 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,7 +14,6 @@ import { ZigynComponent } from './zigyn/zigyn.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { FinishSignUpDialogComponent } from './finish-sign-up-dialog/finish-sign-up-dialog.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FooterComponent } from './footer/footer.component';
 
 
@@ -34,7 +35,10 @@ import { FooterComponent } from './footer/footer.component';
     MaterialModule,
     NgbModule,
     FormsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    AgmCoreModule.forRoot({
+      apiKey: "your API Key"
+    }) 
   ],
   providers: [
     Title

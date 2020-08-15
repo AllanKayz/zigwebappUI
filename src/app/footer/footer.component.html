@@ -17,7 +17,11 @@
         <p><span></span>&nbsp;City, State, 0000</p>
       </div>
       <div class="col-6 text-center">
-        <div class="map" id="map"></div>
+        <div class="map" id="map">
+          <agm-map [latitude]="latitude" [longitude]="longitude" (mapClick)="location($event)"> 
+            <agm-marker [latitude]="latitude" [longitude]="longitude"></agm-marker> 
+          </agm-map>
+        </div>
       </div>
     </div>
     <hr class="light-100">

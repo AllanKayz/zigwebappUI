@@ -13,13 +13,13 @@ export class FooterComponent implements OnInit {
   faMobile = faMobile;
   faEnvelope = faEnvelope;
   faMapMarkerAlt = faMapMarkerAlt;
-  // Add Google Map Showing ZIG Offices Location
-  
+  latitude = 51.678418;
+  longitude = 7.809007;
+  location(x): any {
+    this.latitude = x.coords.lat;
+    this.longitude = x.coords.lng;
+  }
   constructor() { }
 
-  ngOnInit(): void {
-    
-  }
-  
-
+  ngOnInit(): void { }
 }
