@@ -1,33 +1,38 @@
 <section class="footer">
   <div class="container">
-    <div class="row footer-content">
-      <div class="col-6 text-center">
+    <div class="row footer-content pb-5">
+      <div class="col-6 text-center text-white">
         <hr class="light">
-        <h5 class="">Where To Find Us</h5>
+        <h4 class="h4">Where To Find Us</h4>
         <hr class="light">
         <p>
-          <fa-icon [icon]="faMobile"></fa-icon> 555-555-555
+          <fa-icon [icon]="faMobile"></fa-icon>&nbsp;&nbsp;555-555-555
         </p>
         <p>
-          <fa-icon [icon]="faEnvelope"></fa-icon> email@gmail.com
+          <fa-icon [icon]="faEnvelope"></fa-icon>&nbsp;&nbsp;email@gmail.com
         </p>
         <p>
-          <fa-icon [icon]="faMapMarkerAlt"></fa-icon> 100 Street Name
+          <fa-icon [icon]="faMapMarkerAlt"></fa-icon>&nbsp;&nbsp;100 Street Name City, State, 0000
         </p>
-        <p><span></span>&nbsp;City, State, 0000</p>
       </div>
       <div class="col-6 text-center">
         <div class="map" id="map">
-          <agm-map [latitude]="latitude" [longitude]="longitude" (mapClick)="location($event)"> 
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.8726719110123!2d31.121454764797566!3d-17.70347411134655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931b1fec15dce6b%3A0x723511ea14eb9bd9!2sZimbabwe%20Institute%20of%20Geomatics!5e0!3m2!1sen!2szw!4v1597502849412!5m2!1sen!2szw"
+            width="100%" height="295" frameborder="0" style="border-radius:10px; border:0;" allowfullscreen=""
+            aria-hidden="false" tabindex="0"></iframe>
+          <!--agm-map [latitude]="latitude" [longitude]="longitude" (mapClick)="location($event)"> 
             <agm-marker [latitude]="latitude" [longitude]="longitude"></agm-marker> 
-          </agm-map>
+          </agm-map-->
         </div>
       </div>
     </div>
     <hr class="light-100">
-    <div class="footer-notes text-right">
-      <span class="copyrights">&copy;&nbsp;Zimbabwe Institute of Geomatics {{ currentYear }}&nbsp;All Rights Reserved&nbsp;|</span>
-      <span class=" developer-details">&nbsp; Developed by <a href="">Allan Kanyemba</a></span>
+    <div class="footer-notes text-center pb-2">
+      <span class="copyrights text-monospace">&copy;&nbsp;Zimbabwe Institute of Geomatics {{ currentYear }}&nbsp;All
+        Rights
+        Reserved&nbsp;|</span>
+      <span class=" developer-details text-monospace">&nbsp;Developed by&nbsp;<a href="">Allan Kanyemba</a></span>
     </div>
   </div>
 </section>

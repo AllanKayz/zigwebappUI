@@ -37,8 +37,8 @@ import { FooterComponent } from './footer/footer.component';
     FormsModule,
     FontAwesomeModule,
     AgmCoreModule.forRoot({
-      apiKey: "your API Key"
-    }) 
+      apiKey: 'AIzaSyCNkuX7l7LXwNcTZCOLdmex4T4Kfnu_W3I'
+    })
   ],
   providers: [
     Title
