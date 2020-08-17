@@ -67,6 +67,12 @@
   transition: all 0.4s;
 }
 
+.branch-logo {
+  width: 100px;
+  height: 100px;
+  border: 0px;
+}
+
 .what-is-geomatics {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/skyscrapers.jpg);
   background-attachment: fixed;

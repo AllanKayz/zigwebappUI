@@ -140,6 +140,17 @@ ol {
   font-weight: bold;
 }
 
+.zig-green {
+  color: #0d8141;
+}
+.zig-blue {
+  color: #223972;
+}
+
+.zig-red {
+  color: #d32a0e;
+}
+
 @media (min-width: 769px) {
   .mobile-view-only {
     display: none;
