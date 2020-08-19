@@ -151,10 +151,65 @@ ol {
   color: #d32a0e;
 }
 
+/* Banner Area */
+.banner-area {
+  margin-left: -15px;
+  margin-right: -15px;
+  z-index: 1;
+  background: url('../../assets/images/banner-background.png') no-repeat center center;
+  background-size: cover;
+}
+
+.banner-area .banner-inner {
+  width: 100%;
+}
+
+.banner-area .banner-inner .home-left-img {
+  margin-left: -180px;
+}
+
+.banner-area .banner-inner .home-left-img img {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 300px;
+}
+
+.banner-area .banner-inner .banner-content {
+  text-align: center;
+  color: #ffffff;
+  margin-left: 70px;
+  background: rgba(7, 85, 4, 0.603);
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.banner-area .banner-inner .banner-content h3 {
+  margin-top: 0px;
+  line-height: 72px;
+  margin-bottom: 20px;
+}
+
 @media (min-width: 769px) {
   .mobile-view-only {
     display: none;
     visibility: hidden;
+  }
+
+  .banner-area .banner-inner .banner-content {
+    position: absolute;
+    top: 20%;
+    background: rgba(0, 0, 0, 0.0);
+    margin-left: 20px;
+  }
+
+  .banner-area .banner-inner .banner-content h3 {
+    text-align: left;
+    font-size: 50px;
+  }
+
+  .banner-area .banner-inner .banner-content p {
+    font-size: 20px;
   }
 
   /* width */
@@ -245,5 +300,16 @@ ol {
   .main-title h2 {
     font-size: 28px;
     font-weight: bold;
+  }
+
+  .banner-area .banner-inner .banner-content h3 {
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner-area .banner-inner .banner-content {
+    margin-left: 10px;
   }
 }

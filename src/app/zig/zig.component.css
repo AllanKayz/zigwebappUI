@@ -1,43 +1,5 @@
 @import url("../base/base.css");
 
-.home-banner-area {
-  margin-left: -15px;
-  margin-right: -15px;
-  z-index: 1;
-  background: url('../../assets/images/banner-background.png') no-repeat center center;
-  background-size: cover;
-}
-
-.home-banner-area .banner-inner {
-  width: 100%;
-}
-
-.home-banner-area .banner-inner .home-left-img {
-  margin-left: -180px;
-}
-
-.home-banner-area .banner-inner .home-left-img img {
-  border-top-left-radius: 30px;
-  border-top-right-radius: 300px;
-}
-
-.home-banner-area .banner-inner .banner-content {
-  text-align: center;
-  color: #ffffff;
-  margin-left: 70px;
-  background: rgba(7, 85, 4, 0.603);
-  padding: 10px;
-  border-radius: 10px;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.home-banner-area .banner-inner .banner-content h3 {
-  margin-top: 0px;
-  line-height: 72px;
-  margin-bottom: 20px;
-}
-
 .homesections {
   width: 85%;
   margin: auto;
@@ -214,22 +176,6 @@
   .video-area a {
     margin-top: 40px;
   }
-
-  .home-banner-area .banner-inner .banner-content {
-    position: absolute;
-    top: 20%;
-    background: rgba(0, 0, 0, 0.0);
-    margin-left: 20px;
-  }
-
-  .home-banner-area .banner-inner .banner-content h3 {
-    text-align: left;
-    font-size: 50px;
-  }
-  
-  .home-banner-area .banner-inner .banner-content p {
-    font-size: 20px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -242,11 +188,6 @@
     font-size: 2.5em;
     padding: 1.2rem;
   }
-
-  .home-banner-area .banner-inner .banner-content h3 {
-    line-height: 40px;
-    margin-bottom: 20px;
-  }
 }
 
 @media(max-width: 576px) {
@@ -258,9 +199,5 @@
   .industries-text {
     font-size: 80%;
     font-weight: 400;
-  }
-
-  .home-banner-area .banner-inner .banner-content {
-    margin-left: 10px;
   }
 }

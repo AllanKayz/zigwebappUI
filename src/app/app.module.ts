@@ -15,6 +15,9 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { FinishSignUpDialogComponent } from './finish-sign-up-dialog/finish-sign-up-dialog.component';
 import { FooterComponent } from './footer/footer.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { GeochatComponent } from './geochat/geochat.component';
+import { GeohubComponent } from './geohub/geohub.component';
 
 
 
@@ -26,7 +29,10 @@ import { FooterComponent } from './footer/footer.component';
     LoginComponent,
     RegisterComponent,
     FinishSignUpDialogComponent,
-    FooterComponent
+    FooterComponent,
+    AboutUsComponent,
+    GeochatComponent,
+    GeohubComponent
   ],
   imports: [
     BrowserModule,

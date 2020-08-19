@@ -1,0 +1,27 @@
+@import url("../base/base.css");
+
+.aims span {
+    font-size: 15px;
+}
+
+@media(min-width: 769px) {
+    .banner-area {
+        height: 400px;
+        text-align: center;
+    }
+
+    .banner-area .banner-inner .banner-content h3 {
+      margin-top: 120px;
+      line-height: 72px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .banner-area .banner-inner .banner-content {
+      position: absolute;
+      top: 20%;
+      right: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.0);
+    }
+}
