@@ -67,10 +67,8 @@
   transition: all 0.4s;
 }
 
-.branch-logo {
-  width: 100px;
-  height: 100px;
-  border: 0px;
+.branch {
+  max-width: 480px;
 }
 
 .what-is-geomatics {
