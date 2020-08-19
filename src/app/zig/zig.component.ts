@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faFacebook, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { faPlay } from '@fortawesome/free-solid-svg-icons';
+import { faPlay, faSatellite, faUser, faMapMarkedAlt, faGlobeAfrica, faUserCog } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-zig',
@@ -14,6 +14,11 @@ export class ZigComponent implements OnInit {
   faYoutube = faYoutube;
   faTwitter = faTwitter;
   faPlay = faPlay;
+  faUser = faUser;
+  faSatellite = faSatellite;
+  faMapMarkedAlt = faMapMarkedAlt;
+  faGlobeAfrica = faGlobeAfrica;
+  faUserCog = faUserCog;
   // Accordion steps declaration
   step = 0;
 

@@ -14,7 +14,7 @@
               <h3 class="text-uppercase lead text-white">
                 Zimbabwe Institute <br>of <br class="mobile-view-only">Geomatics
               </h3>
-              <p class="text-white">
+              <p class="text-white text-right">
                 Where every Geomatics voice matters and where every Geomatics matter is voiced
               </p>
             </div>
@@ -25,7 +25,7 @@
   </section>
   <!--Organisation Brief Description-->
   <section class="who-we-are homesections pt-5">
-    <div class="zig-mini-bio">
+    <div class="zig-mini-bio pb-5">
       <div class="col-12 text-center main-title pt-5 pb-4">
         <h2 class="display-3 h2 text-capitalize">Who We Are</h2>
         <h4 class="display-4 h4 text-capitalize">Who We Are</h4>
@@ -44,15 +44,16 @@
           term “Geomatics” which clearly encompasses all the disciplines.</p>
       </div>
     </div>
+    <!--Who we branch components-->
     <div class="zig-sub-branches pt-4">
       <div class="row text-center padding">
-        <div class="col-xs-12 col-sm-6 col-md-4 pb-5">
+        <div class="col-xs-12 col-sm-12 col-md-4 pb-5 text-center">
           <a href="">
-            <mat-card class="branch">
+            <mat-card class="branch mx-auto">
               <img mat-card-image src="assets/images/zigyn-logo.png" alt="ZIG Youth Network Logo">
               <mat-card-content>
-                <h3><span class="zig-blue">Zimbabwe Institute of Geomatics</span><br /><span class="zig-red">Youth
-                    Network</span></h3>
+                <h5><span class="zig-blue">Zimbabwe Institute of Geomatics</span><br /><span class="zig-red">Youth
+                    Network</span></h5>
                 <p class="text-monospace">The Youth Community of ZIG.</p>
               </mat-card-content>
               <mat-card-actions>
@@ -61,12 +62,12 @@
             </mat-card>
           </a>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 pb-5">
+        <div class="col-xs-12 col-sm-12 col-md-4 pb-5">
           <a href="#">
-            <mat-card class="branch">
+            <mat-card class="branch mx-auto">
               <img mat-card-image src="assets/images/zigyn-logo.png" alt="ZIG Youth Network Logo">
               <mat-card-content>
-                <h3><span class="zig-green">Geomatics</span><span class="zig-red">Chat</span></h3>
+                <h5><span class="zig-green">Geomatics</span><span class="zig-red">Chat</span></h5>
                 <p class="text-monospace">A Geomatics Talk Show.</p>
               </mat-card-content>
               <mat-card-actions>
@@ -75,12 +76,12 @@
             </mat-card>
           </a>
         </div>
-        <div class="col-sm-12 col-md-4 pb-5">
+        <div class="col-sm-12 col-md-4 pb-5 text-center">
           <a href="#">
-            <mat-card class="branch">
+            <mat-card class="branch mx-auto">
               <img mat-card-image src="assets/images/zigyn-logo.png" alt="ZIG Youth Network Logo">
               <mat-card-content>
-                <h3><span class="zig-blue">Geomatics</span><span class="zig-green">Hub</span></h3>
+                <h5><span class="zig-blue">Geomatics</span><span class="zig-green">Hub</span></h5>
                 <p class="text-monospace">Platform for sharing geo-related data, tutorials, accademic research papers,
                   thesis,
                   projects.</p>
@@ -116,7 +117,7 @@
   </section>
   <!--Industries Section-->
   <section class="industries homesections pb-5 pt-5">
-    <div class="col-12 text-center main-title pt-5 pb-4">
+    <div class="col-12 text-center main-title pt-5 pb-5">
       <h2 class="display-3 h2 text-capitalize">Industries We Serve</h2>
       <h4 class="display-4 h4 text-capitalize">Industries We Serve</h4>
     </div>
@@ -216,11 +217,11 @@
       </mat-accordion>
     </div>
     <!--This Section is only visible in Desktop View-->
-    <div class="desktop-view-only">
+    <div class="desktop-view-only pt-3">
       <mat-tab-group animationDuration="2000ms" mat-align-tabs="start">
         <mat-tab>
           <ng-template mat-tab-label>
-            <mat-icon class="example-tab-icon">thumb_up</mat-icon>&nbsp;&nbsp;
+            <fa-icon [icon]="faSatellite" size="2x"></fa-icon>&nbsp;&nbsp;
             <span class="text-left">Photogrammetry &<br />Remote Sensing</span>
           </ng-template>
           <p class="text-monospace text-left industry-text p-3">Photogrammetry is the art and science of measurements
@@ -231,7 +232,7 @@
         </mat-tab>
         <mat-tab>
           <ng-template mat-tab-label class="text-left">
-            <mat-icon class="example-tab-icon">thumb_up</mat-icon>&nbsp;&nbsp;
+            <fa-icon [icon]="faGlobeAfrica" size="2x"></fa-icon>&nbsp;&nbsp;
             <span class="text-left">Cartography &<br />GISc</span>
           </ng-template>
           <p class="industries-text text-left text-monospace p-3">
@@ -245,7 +246,7 @@
         </mat-tab>
         <mat-tab>
           <ng-template mat-tab-label>
-            <mat-icon class="example-tab-icon">thumb_up</mat-icon>&nbsp;&nbsp;
+            <fa-icon [icon]="faUserCog" size="2x"></fa-icon>&nbsp;&nbsp;
             <span class="text-left">Mining<br />Survey</span>
           </ng-template>
           <p class="industries-text text-left text-monospace p-3">Mine survey is the practice art or science of
@@ -254,7 +255,7 @@
         </mat-tab>
         <mat-tab>
           <ng-template mat-tab-label>
-            <mat-icon class="example-tab-icon">thumb_up</mat-icon>&nbsp;&nbsp;
+            <fa-icon [icon]="faUserCog" size="2x"></fa-icon>&nbsp;&nbsp;
             <span class="text-left">Engineering <br />Survey</span>
           </ng-template>
           <p class="text-left industries-text text-monospace p-3">Engineering survey is a Geomatics profession that
@@ -265,7 +266,7 @@
         </mat-tab>
         <mat-tab>
           <ng-template mat-tab-label>
-            <mat-icon class="example-tab-icon">thumb_up</mat-icon>&nbsp;&nbsp;
+            <fa-icon [icon]="faMapMarkedAlt" size="2x"></fa-icon>&nbsp;&nbsp;
             <span class="text-left">Cadastral <br />Survey</span>
           </ng-template>
           <p class="industries-text text-left text-monospace p-3">Cadastral surveying is a branch of the surveying

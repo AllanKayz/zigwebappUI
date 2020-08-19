@@ -195,6 +195,17 @@ ol {
   font-size: 16px;
 }
 
+::ng-deep .mat-card {
+  background: #ffffff;
+  color: #000000;
+}
+
+::ng-deep .mat-card:not([class*=mat-elevation-z]) {
+  box-shadow: 2px 4px 2px 1px rgba(32, 85, 25, 0.37),
+  0px 1px 1px 0px rgba(32, 85, 25, 0.37),
+  0px 1px 3px 0px rgba(32, 85, 25, 0.37);
+}
+
 @media (max-width: 768px) {
   p {
     font-size: 14px;
