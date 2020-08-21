@@ -1,9 +1,455 @@
-<h1>Welcome To ZIGYN</h1>
-<div id="startpage" class="center">
-  <button id="zig" routerLink="/ZIG" routerLinkActive="active" class="optionbtn" mat-raised-button color="accent">
-    ZIG Official
-  </button>
-  <button id="zigyn" routerLink="/ZIGYN" routerLinkActive="active" class="optionbtn" mat-raised-button color="warn">
-    ZIGYN
-  </button>
-</div>
+<main class="container-fluid">
+  <!--Welcome Banner-->
+  <section class="zigyn-banner">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-lg-6 col-md-6"></div>
+        <div class="col-lg-6 col-md-6"></div>
+      </div>
+    </div>
+  </section>
+  <!--Who We Are Section-->
+  <section class="who-is-zigyn">
+    <!--Brief Description of ZIGYN-->
+    <div class="zigyn-description">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-4 desktop-view-only"></div>
+        <div class="col-xs-12 col-sm-12 col-md-8">
+          <div class="main-title pb-3">
+            <h2 class="display-3 h2 text-capitalize">Who We Are</h2>
+            <h4 class="display-4 h4 text-capitalize">Who We Are</h4>
+          </div>
+          <div class="description-of-us">
+            <p class="paragraph">
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--ZIGYN projects-->
+    <div class="zigyn-branches">
+      <div class="container text-center">
+        <div class="main-title pb-3">
+          <h2 class="display-3 h2 text-capitalize">Our Features</h2>
+          <h4 class="display-4 h4 text-capitalize">Our Features</h4>
+        </div>
+      </div>
+      <div class="container text-center pt-2 pb-3">
+        <span class="lead zig-green text-capitalize">Creativity With Purpose</span>
+      </div>
+      <div class="features">
+        <div class="container">
+          <div class="row features-spread">
+            <div class="col-xs-12 col-sm-12 col-md-4">
+              <div class="single-feature pb-4">
+                <div class="single-feature-inner text-center">
+                  <span class="feature-logo">
+                    <fa-icon [icon]="faUser" size="6x"></fa-icon>
+                  </span>
+                  <br /><br />
+                  <h3>GeoChat</h3>
+                  <p>Creeping for female light yea that lesser cand evening
+                    heaven isn't bearing tree appear </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4">
+              <div class="single-feature pb-4">
+                <div class="single-feature-inner text-center">
+                  <span class="feature-logo">
+                    <fa-icon [icon]="faUser" size="6x"></fa-icon>
+                  </span>
+                  <br /><br />
+                  <h3>GeoHub</h3>
+                  <p>Creeping for female light yea that lesser cand evening
+                    heaven isn't bearing tree appear </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4">
+              <div class="single-feature pb-4">
+                <div class="single-feature-inner text-center">
+                  <span class="feature-logo">
+                    <fa-icon [icon]="faUser" size="6x"></fa-icon>
+                  </span>
+                  <br/><br/>
+                  <h3>GeoBlog</h3>
+                  <p>Creeping for female light yea that lesser cand evening
+                    heaven isn't bearing tree appear </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!--ZIGYN Leadership-->
+  <section class="leadership pt-5 pb-5 container">
+    <div class="col-12 text-center main-title pb-4">
+      <h2 class="display-3 h2 text-capitalize">Our Leadership</h2>
+      <h4 class="display-4 h4 text-capitalize">Our Leadership</h4>
+    </div>
+    <div class="team-profiles text-center">
+      <owl-carousel-o [options]="leadershipOptions">
+        <ng-template carouselSlide class="team-item p-3">
+          <div class="single-team-member">
+            <div class="team-member-img">
+              <img src="assets/images/team/team1.png" alt="team">
+              <div class="team-member-icon">
+                <div class="display-table">
+                  <div class="display-tablecell">
+                    <a>
+                      <fa-icon [icon]="faLinkedin"></fa-icon>
+                    </a>
+                    <a>
+                      <fa-icon [icon]="faTwitter"></fa-icon>
+                    </a>
+                    <a>
+                      <fa-icon [icon]="faFacebook"></fa-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-member-info">
+              <a>
+                <h4>Wilson Mhuri</h4>
+              </a>
+              <p>President</p>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide class="team-item p-3">
+          <div class="single-team-member">
+            <div class="team-member-img">
+              <img src="assets/images/team/team1.png" alt="team">
+              <div class="team-member-icon">
+                <div class="display-table">
+                  <div class="display-tablecell">
+                    <a>
+                      <fa-icon [icon]="faLinkedin"></fa-icon>
+                    </a>
+                    <a>
+                      <fa-icon [icon]="faTwitter"></fa-icon>
+                    </a>
+                    <a>
+                      <fa-icon [icon]="faFacebook"></fa-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-member-info">
+              <a>
+                <h4>Wilson Mhuri</h4>
+              </a>
+              <p>President</p>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide class="team-item">
+          <div class="single-team-member">
+            <div class="team-member-img">
+              <img src="assets/images/team/team1.png" alt="team">
+              <div class="team-member-icon">
+                <div class="display-table">
+                  <div class="display-tablecell">
+                    <a>
+                      <fa-icon [icon]="faLinkedin"></fa-icon>
+                    </a>
+                    <a>
+                      <fa-icon [icon]="faTwitter"></fa-icon>
+                    </a>
+                    <a>
+                      <fa-icon [icon]="faFacebook"></fa-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-member-info">
+              <a>
+                <h4>Wilson Mhuri</h4>
+              </a>
+              <p>President</p>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide class="team-item">
+          <div class="single-team-member">
+            <div class="team-member-img">
+              <img src="assets/images/team/team1.png" alt="team">
+              <div class="team-member-icon">
+                <div class="display-table">
+                  <div class="display-tablecell">
+                    <a>
+                      <fa-icon [icon]="faLinkedin"></fa-icon>
+                    </a>
+                    <a>
+                      <fa-icon [icon]="faTwitter"></fa-icon>
+                    </a>
+                    <a>
+                      <fa-icon [icon]="faFacebook"></fa-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-member-info">
+              <a>
+                <h4>Wilson Mhuri</h4>
+              </a>
+              <p>President</p>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide class="team-item">
+          <div class="single-team-member">
+            <div class="team-member-img">
+              <img src="assets/images/team/team1.png" alt="team">
+              <div class="team-member-icon">
+                <div class="display-table">
+                  <div class="display-tablecell">
+                    <a>
+                      <fa-icon [icon]="faLinkedin"></fa-icon>
+                    </a>
+                    <a>
+                      <fa-icon [icon]="faTwitter"></fa-icon>
+                    </a>
+                    <a>
+                      <fa-icon [icon]="faFacebook"></fa-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-member-info">
+              <a>
+                <h4>Wilson Mhuri</h4>
+              </a>
+              <p>President</p>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide class="team-item">
+          <div class="single-team-member">
+            <div class="team-member-img">
+              <img src="assets/images/team/team1.png" alt="team">
+              <div class="team-member-icon">
+                <div class="display-table">
+                  <div class="display-tablecell">
+                    <a>
+                      <fa-icon [icon]="faLinkedin"></fa-icon>
+                    </a>
+                    <a>
+                      <fa-icon [icon]="faTwitter"></fa-icon>
+                    </a>
+                    <a>
+                      <fa-icon [icon]="faFacebook"></fa-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-member-info">
+              <a>
+                <h4>Wilson Mhuri</h4>
+              </a>
+              <p>President</p>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide class="team-item">
+          <div class="single-team-member">
+            <div class="team-member-img">
+              <img src="assets/images/team/team1.png" alt="team">
+              <div class="team-member-icon">
+                <div class="display-table">
+                  <div class="display-tablecell">
+                    <a>
+                      <fa-icon [icon]="faLinkedin"></fa-icon>
+                    </a>
+                    <a>
+                      <fa-icon [icon]="faTwitter"></fa-icon>
+                    </a>
+                    <a>
+                      <fa-icon [icon]="faFacebook"></fa-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-member-info">
+              <a>
+                <h4>Wilson Mhuri</h4>
+              </a>
+              <p>President</p>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide class="team-item">
+          <div class="single-team-member">
+            <div class="team-member-img">
+              <img src="assets/images/team/team1.png" alt="team">
+              <div class="team-member-icon">
+                <div class="display-table">
+                  <div class="display-tablecell">
+                    <a>
+                      <fa-icon [icon]="faLinkedin"></fa-icon>
+                    </a>
+                    <a>
+                      <fa-icon [icon]="faTwitter"></fa-icon>
+                    </a>
+                    <a>
+                      <fa-icon [icon]="faFacebook"></fa-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-member-info">
+              <a>
+                <h4>Wilson Mhuri</h4>
+              </a>
+              <p>President</p>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide class="team-item">
+          <div class="single-team-member">
+            <div class="team-member-img">
+              <img src="assets/images/team/team1.png" alt="team">
+              <div class="team-member-icon">
+                <div class="display-table">
+                  <div class="display-tablecell">
+                    <a>
+                      <fa-icon [icon]="faLinkedin"></fa-icon>
+                    </a>
+                    <a>
+                      <fa-icon [icon]="faTwitter"></fa-icon>
+                    </a>
+                    <a>
+                      <fa-icon [icon]="faFacebook"></fa-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-member-info">
+              <a>
+                <h4>Wilson Mhuri</h4>
+              </a>
+              <p>President</p>
+            </div>
+          </div>
+        </ng-template>
+      </owl-carousel-o>
+    </div>
+  </section>
+  <!--Latest News-->
+  <section class="latest-news pt-5 pb-5 container">
+    <div class="col-12 text-center main-title pb-4">
+      <h2 class="display-3 h2 text-capitalize">Latest News</h2>
+      <h4 class="display-4 h4 text-capitalize">Latest News</h4>
+    </div>
+    <div class="row pb-5">
+      <div class="col-sm-12 col-md-6 col-lg-4 post pb-4">
+        <div class="single-post">
+          <div class="post-thumbnail">
+            <a routerLink="/ZIGYN" routerLinkActive="active"><img src="assets/images/latest_news/blog1.jpg"
+                alt="blog"></a>
+          </div>
+          <div class="post-details">
+            <div class="post-author">
+              <a routerLink="/ZIGYN" routerLinkActive="active">
+                <fa-icon [icon]="faUser"></fa-icon>&nbsp;&nbsp;{{author}}
+              </a>
+              <a routerLink="/ZIGYN" routerLinkActive="active">
+                <fa-icon [icon]="faComments"></fa-icon>&nbsp;&nbsp;Comments
+              </a>
+              <a routerLink="/ZIGYN" routerLinkActive="active">
+                <fa-icon [icon]="faCalendar"></fa-icon>&nbsp;&nbsp;{{datePublished}}
+              </a>
+            </div>
+            <h4 class="post-title"><a routerLink="/ZIGYN" routerLinkActive="active">Lorem ipsum dolor sit</a></h4>
+            <p>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad</p>
+          </div>
+        </div>
+      </div>
+      <div class=" col-sm-12 col-md-6 col-lg-4 post pb-4">
+        <div class="single-post">
+          <div class="post-thumbnail">
+            <a routerLink="/ZIGYN" routerLinkActive="active"><img src="assets/images/latest_news/blog1.jpg"
+                alt="blog"></a>
+          </div>
+          <div class="post-details">
+            <div class="post-author">
+              <a routerLink="/ZIGYN" routerLinkActive="active">
+                <fa-icon [icon]="faUser"></fa-icon>&nbsp;&nbsp;{{author}}
+              </a>
+              <a routerLink="/ZIGYN" routerLinkActive="active">
+                <fa-icon [icon]="faComments"></fa-icon>&nbsp;&nbsp;Comments
+              </a>
+              <a routerLink="/ZIGYN" routerLinkActive="active">
+                <fa-icon [icon]="faCalendar"></fa-icon>&nbsp;&nbsp;{{datePublished}}
+              </a>
+            </div>
+            <h4 class="post-title"><a routerLink="/ZIGYN" routerLinkActive="active">Lorem ipsum dolor sit</a></h4>
+            <p>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 d-md-none d-lg-block post pb-4">
+        <div class="single-post">
+          <div class="post-thumbnail">
+            <a routerLink="/ZIGYN" routerLinkActive="active"><img src="assets/images/latest_news/blog1.jpg"
+                alt="blog"></a>
+          </div>
+          <div class="post-details">
+            <div class="post-author">
+              <a routerLink="/ZIGYN" routerLinkActive="active">
+                <fa-icon [icon]="faUser"></fa-icon>&nbsp;&nbsp;{{author}}
+              </a>
+              <a routerLink="/ZIGYN" routerLinkActive="active">
+                <fa-icon [icon]="faComments"></fa-icon>&nbsp;&nbsp;Comments
+              </a>
+              <a routerLink="/ZIGYN" routerLinkActive="active">
+                <fa-icon [icon]="faCalendar"></fa-icon>&nbsp;&nbsp;{{datePublished}}
+              </a>
+            </div>
+            <h4 class="post-title"><a routerLink="/ZIGYN" routerLinkActive="active">Lorem ipsum dolor sit</a></h4>
+            <p>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Social Media Connect-->
+  <section class="social-media pb-5">
+    <div class="col-12 text-center main-title pb-4">
+      <h2 class="display-3 h2 text-capitalize">Connect</h2>
+      <h4 class="display-4 h4 text-capitalize">Connect</h4>
+    </div>
+    <div class="col-12 text-center social pb-4">
+      <a href="#">
+        <fa-icon [icon]="faFacebook" class="facebook-icon"></fa-icon>
+      </a>
+      <a href="#">
+        <fa-icon [icon]="faTwitter" class="twitter-icon"></fa-icon>
+      </a>
+      <a href="#">
+        <fa-icon [icon]="faYoutube" class="youtube-icon"></fa-icon>
+      </a>
+    </div>
+  </section>
+  <!--Footer Section-->
+  <app-footer class="desktop-view-only"></app-footer>
+</main>
