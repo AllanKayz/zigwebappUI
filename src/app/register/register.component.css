@@ -73,10 +73,6 @@
   padding: 0px 10px;
 }
 
-.full-width {
-  width: 100%;
-}
-
 .registration-btns {
   display: flex;
   flex-direction: row;

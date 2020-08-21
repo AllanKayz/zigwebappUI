@@ -4,7 +4,8 @@ import { MaterialModule } from './material/material.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { AgmCoreModule } from '@agm/core'; 
+import { AgmCoreModule } from '@agm/core';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -42,6 +43,7 @@ import { GeohubComponent } from './geohub/geohub.component';
     NgbModule,
     FormsModule,
     FontAwesomeModule,
+    CarouselModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCNkuX7l7LXwNcTZCOLdmex4T4Kfnu_W3I'
     })

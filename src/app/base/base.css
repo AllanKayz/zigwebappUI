@@ -5,7 +5,18 @@
 html,
 body {
   height: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Overpass",
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Roboto,
+  "Helvetica Neue",
+  Arial,
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol";
+  background: #fff;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
 }
@@ -135,7 +146,7 @@ ol {
 }
 
 .main-title h4 {
-  color: #222222;
+  color: #223972;
   margin-top: -40px;
   font-weight: bold;
 }
@@ -149,6 +160,10 @@ ol {
 
 .zig-red {
   color: #d32a0e;
+}
+
+.full-width {
+  width: 100%;
 }
 
 /* Banner Area */
@@ -253,6 +268,10 @@ ol {
 ::ng-deep .mat-card {
   background: #ffffff;
   color: #000000;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  color: rgba(23, 148, 6, 0.623);
 }
 
 ::ng-deep .mat-card:not([class*=mat-elevation-z]) {

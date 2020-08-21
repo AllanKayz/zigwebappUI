@@ -233,13 +233,13 @@
   }
 
   .logo-background {
-    background-color: #fc0254;
+    background-color: #ffffffec;
     height: 100%;
     padding: 10px 10px;
   }
 
   .mat-toolbar {
-    background-color: green;
+    background-color: #008000;
   }
 
   #user-profile {
