@@ -4,8 +4,57 @@
   color: #d32a0e;
 }
 
+/* Banner Styling */
+.zigyn-banner {
+  width: 100%;
+  padding-top: 100px;
+}
 
-/* ZIGYN Feature Styling */
+.zigyn-banner .banner-text .banner-text-inner h1 {
+  line-height: 80px;
+  text-shadow: 2px 5px 15px #c9351acc;
+}
+
+.zigyn-banner .banner-text .banner-text-inner h3 {
+  text-shadow: 2px 5px 5px #d32a0e;
+}
+
+.banner-text-inner span {
+  display: block;
+}
+
+.banner-btn {
+  display: inline-block;
+  padding: 19.5px 42px;
+  background-color: #c9351acc;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  margin-top: 44px;
+  border-radius: 4px;
+  font-weight: 500;
+  box-shadow: 0px 10px 30px 0px #0d8141;
+}
+
+.banner-btn:hover {
+  background-color: #d32a0e;
+}
+
+/* Who We Are Styling */
+.who-we-are-img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px -5px #008000;
+}
+
+.who-we-are-img img {
+  border-radius: 10px;
+}
+
+/* ZIGYN Features Styling */
 .features {
   background-color: #0d350def;
   padding: 20px 20px;
@@ -109,6 +158,20 @@
   .social a {
     font-size: 2.5em;
     padding: 1.2rem;
+  }
+
+  .zigyn-description .main-title,
+  .zigyn-description .paragraph {
+    margin-left: 0px !important;
+  }
+
+  .zigyn-description .main-title {
+    text-align: center;
+  }
+
+  .zigyn-banner {
+    width: 100%;
+    padding-top: 50px;
   }
 }
 
