@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { faTwitter, faFacebook, faYoutube, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faUser, faComments, faCalendar } from '@fortawesome/free-solid-svg-icons';
 import { OwlOptions } from 'ngx-owl-carousel-o';
-import anime from 'animejs';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-zigyn',
@@ -17,6 +17,7 @@ export class ZigynComponent implements OnInit {
   faUser = faUser;
   faCalendar = faCalendar;
   faComments = faComments;
+  faLinkedin = faLinkedin;
   // Latest News Variables
   author = 'John';
   month: number = new Date().getMonth();
@@ -52,25 +53,6 @@ export class ZigynComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-
+    AOS.init();
   }
-
-  ngAfterViewInit(): any {
-    anime.timeline({ loop: true })
-      .add({
-        targets: '.ml15 .word',
-        scale: [14, 1],
-        opacity: [0, 1],
-        easing: 'easeOutCirc',
-        duration: 800,
-        delay: (el, i) => 800 * i
-      }).add({
-        targets: '.ml15',
-        opacity: 0,
-        duration: 1000,
-        easing: 'easeOutExpo',
-        delay: 1000
-      });
-  }
-
 }
